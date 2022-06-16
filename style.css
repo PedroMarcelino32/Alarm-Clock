@@ -7,12 +7,70 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-body{
+body, .icon, .content{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+body{
+    min-height: 100vh;
+    background: #fff;
+}
 
-.column{
-    text-align: center;
+.icon{
+    width: 440px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px 30px 3px;
+}
+
+.icon img{
+    max-width: 150px;
+}
+
+.icon h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.icon .content{
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.icon .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.content .column{
+    border-radius: 5px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    width: calc(100%/3 -5px);
+    font-size: 19px;
+}
+
+.column select{
+    outline: none;
+    border: none;
+    height: 53px;
+    width: 100%;
+    font-size: 19px;
+}
+
+.icon button{
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 17px;
+    border-radius: 5px;
+    background-color: #7005;
 }
